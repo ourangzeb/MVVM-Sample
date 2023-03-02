@@ -16,6 +16,7 @@
 		CB37C89629B0A86D003F1281 /* MVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C89529B0A86D003F1281 /* MVVMSampleTests.swift */; };
 		CB37C8A029B0A86D003F1281 /* MVVMSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C89F29B0A86D003F1281 /* MVVMSampleUITests.swift */; };
 		CB37C8A229B0A86D003F1281 /* MVVMSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C8A129B0A86D003F1281 /* MVVMSampleUITestsLaunchTests.swift */; };
+		CBA6536529B0B3AC00F2B720 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6536429B0B3AC00F2B720 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CB37C89B29B0A86D003F1281 /* MVVMSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB37C89F29B0A86D003F1281 /* MVVMSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleUITests.swift; sourceTree = "<group>"; };
 		CB37C8A129B0A86D003F1281 /* MVVMSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBA6536429B0B3AC00F2B720 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CB37C88429B0A86A003F1281 /* Main.storyboard */,
+				CBA6536429B0B3AC00F2B720 /* TableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB37C88329B0A86A003F1281 /* ViewController.swift in Sources */,
+				CBA6536529B0B3AC00F2B720 /* TableViewCell.swift in Sources */,
 				CB37C87F29B0A86A003F1281 /* AppDelegate.swift in Sources */,
 				CB37C88129B0A86A003F1281 /* SceneDelegate.swift in Sources */,
 			);
