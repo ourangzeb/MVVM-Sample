@@ -11,9 +11,8 @@ import UIKit
 
 class TableViewCell: UITableViewCell{
     
-    @IBOutlet weak var titleLabel: UIView!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var releaseDateLabel: UILabel!
-    
+    @IBOutlet weak var titleLabels: UILabel!
     
 }
