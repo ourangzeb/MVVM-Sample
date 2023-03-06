@@ -36,17 +36,9 @@ extension MainViewController:UITableViewDelegate {
 }
 extension MainViewController:UITableViewDataSource{
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)  -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        cell.titleLabels.text = "sdfsdf"
-        guard let dataitem = viewModel.myData?.items[indexPath.row] else {
-            return cell
-        }
-        cell.titleLabels.text = dataitem.title
-        cell.releaseDateLabel.text = dataitem.releaseDate
-    
-        
-//        cell.titleLabels.text = "sdfsdf"
+        cell.configureImage(movie: (viewModel.myData?.items[indexPath.row])!, viewmodel: viewModel)
         return cell
     }
     

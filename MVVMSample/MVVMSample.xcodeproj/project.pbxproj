@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0719D629B6309200D59372 /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0719D529B6309200D59372 /* ImageDownloadService.swift */; };
 		CB37C87F29B0A86A003F1281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C87E29B0A86A003F1281 /* AppDelegate.swift */; };
 		CB37C88129B0A86A003F1281 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C88029B0A86A003F1281 /* SceneDelegate.swift */; };
 		CB37C88329B0A86A003F1281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C88229B0A86A003F1281 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0719D529B6309200D59372 /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
 		CB37C87B29B0A86A003F1281 /* MVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB37C87E29B0A86A003F1281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB37C88029B0A86A003F1281 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				CBBAAAA929B2364000D2BB43 /* RequestManager.swift */,
 				CBBAAAAB29B2383800D2BB43 /* ServiceManager.swift */,
 				CB8FD37F29B4AEE800FC6A26 /* Publisher+Util.swift */,
+				CB0719D529B6309200D59372 /* ImageDownloadService.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				CBA6536529B0B3AC00F2B720 /* TableViewCell.swift in Sources */,
 				CB3FB4C129B21E170014A108 /* NetworkRequests.swift in Sources */,
 				CB8FD38029B4AEE800FC6A26 /* Publisher+Util.swift in Sources */,
+				CB0719D629B6309200D59372 /* ImageDownloadService.swift in Sources */,
 				CB8FD38229B4B60700FC6A26 /* MoviesViewModel.swift in Sources */,
 				CBBAAAAA29B2364000D2BB43 /* RequestManager.swift in Sources */,
 				CBBAAAA829B235F200D2BB43 /* Movies+Model.swift in Sources */,

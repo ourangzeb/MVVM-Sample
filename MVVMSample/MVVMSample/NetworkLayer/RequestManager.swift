@@ -41,16 +41,3 @@ class NetworkService: NetworkServiceTypes {
         }
     }
 }
-//protocol ImageDownloadServiceTypes: NSObject {
-//    func downloadImage(url : String) async throws -> T
-//}
-//
-//class ImagedownloadService: ImageDownloadServiceTypes {
-//    
-//    let NetworkServiceDownloadImage = 
-    
-    
-    
-    
-    
-}

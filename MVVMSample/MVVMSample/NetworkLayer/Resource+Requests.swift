@@ -31,3 +31,4 @@ extension Resource {
         return Resource<Movie>(url: url, parameters: parameters, httpMethod: .get)
     }
 }
+

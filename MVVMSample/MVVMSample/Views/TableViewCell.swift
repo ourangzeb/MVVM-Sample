@@ -15,4 +15,25 @@ class TableViewCell: UITableViewCell{
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var titleLabels: UILabel!
     
+    private var imageTask: Task<UIImage, Error>?
+    func configureImage(movie: Movie, viewmodel: MoviesViewModel) {
+        imageTask?.cancel()
+        
+        imageTask = Task {
+            do {
+                let image = try await viewmodel.loadImage(from: movie)
+                DispatchQueue.main.async {
+                    self.movieImageView.image = image
+                }
+            } catch {
+                print("Error loading image: \(error.localizedDescription)")
+            }
+            return {
+                UIImage()
+            }()
+        }
+        self.titleLabels.text = movie.title
+        self.releaseDateLabel.text = movie.releaseDate
+        
+    }
 }
