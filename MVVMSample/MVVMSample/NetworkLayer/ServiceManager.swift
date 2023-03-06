@@ -17,7 +17,7 @@ class ServiceManager {
         self.networkService = networkService
     }
     
-    func fetchData<T: Decodable>(with resource: Resource<T>) -> AnyPublisher<T, Error> {
-        return networkService.load(resource)
+    func fetchData<T: Decodable>(with resource: Resource<T>) async throws -> T {
+        return try await networkService.load(resource)
     }
 }

@@ -10,9 +10,9 @@ import Foundation
 import Combine
 
 protocol NetworkServiceTypes: AnyObject {
-
+    
     @discardableResult
-    func load<T>(_ resource: Resource<T>) -> AnyPublisher<T, Error>
+    func load<T>(_ resource: Resource<T>) async throws -> T
 }
 class NetworkService: NetworkServiceTypes {
     private let session: URLSession
@@ -21,27 +21,23 @@ class NetworkService: NetworkServiceTypes {
         self.session = session
     }
     @discardableResult
-    func load<T:Decodable> (_ resource: Resource<T>) -> AnyPublisher<T, Error> {
-        
+    func load<T:Decodable> (_ resource: Resource<T>) async throws -> T  {
         guard let request = resource.request else {
-            return Fail(error: NetworkError.invalidRequest).eraseToAnyPublisher()
+            throw NetworkError.invalidRequest
         }
-        return session.dataTaskPublisher(for: request)
-            .mapError { _ in NetworkError.invalidRequest }
-            .print()
-            .flatMap { data, response -> AnyPublisher<Data, Error> in
-                guard let response = response as? HTTPURLResponse else {
-                    return Fail(error: NetworkError.invalidResponse).eraseToAnyPublisher()
-                }
-                
-                guard 200..<300 ~= response.statusCode else {
-                    return Fail(error: NetworkError.invalidData).eraseToAnyPublisher()
-                }
-                return .just(data)
-            }
-            .decode(type: T.self, decoder: JSONDecoder())
-            .eraseToAnyPublisher()
         
+        do {
+            let (data, response) = try await session.data(for: request)
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw NetworkError.invalidResponse
+            }
+            guard 200..<300 ~= httpResponse.statusCode else {
+                throw NetworkError.invalidData
+            }
+            let result = try JSONDecoder().decode(T.self, from: data)
+            return result
+        } catch {
+            throw NetworkError.invalidResponse
+        }
     }
 }
-

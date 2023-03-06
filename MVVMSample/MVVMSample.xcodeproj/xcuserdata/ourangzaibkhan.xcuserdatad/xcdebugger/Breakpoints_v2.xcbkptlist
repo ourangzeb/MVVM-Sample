@@ -7,63 +7,237 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "378054D5-F8A6-46F3-B9BD-5A3758956C5C"
+            uuid = "1642A0C5-8A1C-4313-AF84-2CAB1990C0B7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "load(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DF61E68D-840C-459F-A74C-5C7C9E4FEF0F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "load(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "51F2A3FC-B040-421A-BC32-3B3E9A038BCC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "load(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "995402C7-B23E-4530-83F8-5D463358D1A7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
+            filePath = "MVVMSample/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B524704B-A0AD-4995-B97B-7F8FA134B4C4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(session:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B524704B-A0AD-4995-B97B-7F8FA134B4C4 - a97d5040799eb3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of MVVMSample.NetworkService.init(session: __C.NSURLSession) -&gt; MVVMSample.NetworkService"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "11">
+               </Location>
+               <Location
+                  uuid = "B524704B-A0AD-4995-B97B-7F8FA134B4C4 - 59734c486e508692"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMSample.NetworkService.__allocating_init(session: __C.NSURLSession) -&gt; MVVMSample.NetworkService"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  uuid = "B524704B-A0AD-4995-B97B-7F8FA134B4C4 - 59b9b67635fb24b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMSample.NetworkService.init(session: __C.NSURLSession) -&gt; MVVMSample.NetworkService"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E60E2C84-A029-45A9-9B17-9B5FE7E71F57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/Resource+Requests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "movies(query:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAB630F2-1520-417E-9CB9-4E1927222024"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/NetworkRequests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(url:parameters:httpMethod:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3B5043C-DCAC-4AC4-A97A-F961CA676A74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/NetworkRequests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "request"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDECEA21-A2D8-41A0-8840-DB42B48B70BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/NetworkRequests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "request"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F26E9C7F-BE9F-429A-9B93-D26B215B2003"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/NetworkRequests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "request"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1332413A-53BD-40C4-9F51-E9706F71AF86"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1332413A-53BD-40C4-9F51-E9706F71AF86 - d7e3e3efb5e9865a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MVVMSample.NetworkService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "1332413A-53BD-40C4-9F51-E9706F71AF86 - 85d7f894dcd2eb50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MVVMSample.NetworkService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "1332413A-53BD-40C4-9F51-E9706F71AF86 - 64c2c4057ea7e05d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MVVMSample.NetworkService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41B8B587-2056-477F-9661-3C840B026DD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "load(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -71,16 +245,252 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C95C25F9-BF38-4749-B9D2-88908A6BEF9B"
-            shouldBeEnabled = "Yes"
+            uuid = "57ABAD23-3107-4E55-89AD-0217A2D6B27F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "load(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "688C0454-AD9B-4B1C-83D9-AC1FB8097D6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "688C0454-AD9B-4B1C-83D9-AC1FB8097D6D - 35c8780b33b04354"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MVVMSample.NetworkService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1387">
+               </Location>
+               <Location
+                  uuid = "688C0454-AD9B-4B1C-83D9-AC1FB8097D6D - 35c8780b33b04354"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MVVMSample.NetworkService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/RequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1414">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51204E93-BD70-4B3E-9DB9-DB98EEDD8340"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/ServiceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchData(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51204E93-BD70-4B3E-9DB9-DB98EEDD8340 - c4bf75faa1fd120f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MVVMSample.ServiceManager.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(with: MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/ServiceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  uuid = "51204E93-BD70-4B3E-9DB9-DB98EEDD8340 - 50416736247346d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MVVMSample.ServiceManager.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(with: MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/ServiceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "51204E93-BD70-4B3E-9DB9-DB98EEDD8340 - 89f86bca3378510d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MVVMSample.ServiceManager.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(with: MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/ServiceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "51204E93-BD70-4B3E-9DB9-DB98EEDD8340 - 5795e1224db5f68c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MVVMSample.ServiceManager.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(with: MVVMSample.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/NetworkLayer/ServiceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C236A71-EA1A-4DBA-84A4-FB537220E0F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/NetworkLayer/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F99A4C08-54EC-4470-9C25-B68C94FF1830"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/ViewController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchData(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F99A4C08-54EC-4470-9C25-B68C94FF1830 - ab84c4cbb2616d6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MVVMSample.MainViewController.fetchData(with: Swift.String) async -&gt; ()"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "203">
+               </Location>
+               <Location
+                  uuid = "F99A4C08-54EC-4470-9C25-B68C94FF1830 - 17d7c07546b1a73a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MVVMSample.MainViewController.fetchData(with: Swift.String) async -&gt; ()"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "F99A4C08-54EC-4470-9C25-B68C94FF1830 - 702a13100a39316c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MVVMSample.MainViewController.fetchData(with: Swift.String) async -&gt; ()"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "F99A4C08-54EC-4470-9C25-B68C94FF1830 - ad1cc6fdae2cd36d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MVVMSample.MainViewController.fetchData(with: Swift.String) async -&gt; ()"
+                  moduleName = "MVVMSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "61">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70E49687-4337-487C-BE38-ACF4CAB70527"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSample/ViewController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchData(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

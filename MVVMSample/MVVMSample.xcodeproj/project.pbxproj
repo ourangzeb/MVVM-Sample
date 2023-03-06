@@ -181,6 +181,7 @@
 		CB3FB4BD29B21CA20014A108 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				CB3FB4BE29B21CB40014A108 /* APIConstants.swift */,
 				CB3FB4C029B21E170014A108 /* NetworkRequests.swift */,
 				CB3FB4C229B21F900014A108 /* NetworkError.swift */,
 				CBBAAAA529B235B800D2BB43 /* Resource+Requests.swift */,
@@ -195,7 +196,6 @@
 		CB8FD37E29B4A7B200FC6A26 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CB3FB4BE29B21CB40014A108 /* APIConstants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";

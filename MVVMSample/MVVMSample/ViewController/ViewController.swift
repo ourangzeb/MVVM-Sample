@@ -18,28 +18,43 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
 //        networkService  = Network
-        self.searchMovies(with: "name")
+//        self.fetchData(with: "name")
+        Task.detached {
+            await self.fetchData(with: "name")
+        }
     }
         // Do any additional setup after loading the view.
     
+    func fetchData(with name: String) async {
+        let networkService = NetworkService()
+        let resource = Resource<Movies>.movies(query: name)
 
-func searchMovies(with name: String) -> AnyPublisher<Result<Movies, Error>, Never> {
-    let networkService: NetworkServiceTypes
-    networkService = NetworkService.init()
-    return networkService.load(Resource<Movies>.movies(query: name)).map{
-        .success($0)
-    }.catch{error -> AnyPublisher<Result<Movies, Error>, Never> in .just(.failure(error))}.eraseToAnyPublisher()
-//    return networkService
-//        .load(Resource<Movies>.movies(query: name))
-//        .map { .success($0)
-////            print(<#T##Any...#>)
-//        }
-//        .catch { error -> AnyPublisher<Result<Movies, Error>, Never> in .just(.failure(error)) }
-//        .subscribe(on: Scheduler.backgroundWorkScheduler)
-//        .receive(on: Scheduler.mainScheduler)
-//        .eraseToAnyPublisher()
-
-}
+        do {
+            let myData = try await networkService.load(resource)
+            // Use myData object here
+            print(myData)
+            print(myData.items.count)
+        } catch {
+            // Handle error here
+        }
+    }
+//func searchMovies(with name: String) -> AnyPublisher<Result<Movies, Error>, Never> {
+////    let networkService: NetworkServiceTypes
+////    networkService = NetworkService.init()
+////    return networkService.load(Resource<Movies>.movies(query: name)).map{
+////        .success($0)
+////    }.catch{error -> AnyPublisher<Result<Movies, Error>, Never> in .just(.failure(error))}.eraseToAnyPublisher()
+////    return networkService
+////        .load(Resource<Movies>.movies(query: name))
+////        .map { .success($0)
+//////            print(<#T##Any...#>)
+////        }
+////        .catch { error -> AnyPublisher<Result<Movies, Error>, Never> in .just(.failure(error)) }
+////        .subscribe(on: Scheduler.backgroundWorkScheduler)
+////        .receive(on: Scheduler.mainScheduler)
+////        .eraseToAnyPublisher()
+//
+//}
 }
 
 extension MainViewController:UITableViewDelegate {
