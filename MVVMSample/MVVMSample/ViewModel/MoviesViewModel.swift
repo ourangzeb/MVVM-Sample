@@ -18,11 +18,7 @@ class MoviesViewModel {
 
         private var cancellables = Set<AnyCancellable>()
 //    private let downloadService: Net
-        var myData: Movies? {
-            didSet {
-                myDataSubject.send(myData)
-            }
-        }
+        var myData: Movies? 
     private let myDataSubject = PassthroughSubject<Movies?, Never>()
         var myDataPublisher: AnyPublisher<Movies?, Never> {
             myDataSubject.eraseToAnyPublisher()
@@ -39,9 +35,9 @@ class MoviesViewModel {
             return image
         }
     
-        func fetchData() async {
+    func fetchData(with name: String) async {
             do {
-                let resource = Resource<Movies>.movies(query: "name")
+                let resource = Resource<Movies>.movies(query: name)
                 let data = try await networkService.load(resource)
                 self.myData = data
             } catch {
@@ -50,8 +46,8 @@ class MoviesViewModel {
         
         func observeMyData() {
             myDataPublisher
-                .sink { [weak self] myData in
-                    self?.myData = myData
+                .sink { [unowned self] myData in
+                    self.myData = myData
                 }
                 .store(in: &cancellables)
         }

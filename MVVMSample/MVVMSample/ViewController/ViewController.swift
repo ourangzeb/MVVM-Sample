@@ -18,13 +18,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-                loadData()
+        searchbar.delegate = self
+                
     }
-    private func loadData() {
+    private func loadData(name: String) {
             Task {
 
-                await viewModel.fetchData()
+                await viewModel.fetchData(with:name)
                 viewModel.observeMyData()
                 self.tableView.reloadData()
             }
@@ -47,11 +47,26 @@ extension MainViewController:UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let data = viewModel.myData else {
-            return 4
+            return 0
         }
                 
         return data.items.count
     }
     
   
+}
+
+
+extension MainViewController: UISearchBarDelegate {
+    
+    
+    public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.count > 5 {
+            self.loadData(name: searchText)
+        }
+    }
+    
+    
+    
+    
 }
