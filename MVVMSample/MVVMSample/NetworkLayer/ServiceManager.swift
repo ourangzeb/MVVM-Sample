@@ -12,6 +12,7 @@ import Combine
 
 class ServiceManager {
     private let networkService: NetworkServiceTypes
+    private let Imagenetworkservice: ImageServiceTypes
     
     init(networkService: NetworkServiceTypes =  NetworkService()) {
         self.networkService = networkService

@@ -11,50 +11,24 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-     
+    private let viewModel = MoviesViewModel()
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-//        networkService  = Network
-//        self.fetchData(with: "name")
-        Task.detached {
-            await self.fetchData(with: "name")
-        }
+        
+                loadData()
     }
-        // Do any additional setup after loading the view.
-    
-    func fetchData(with name: String) async {
-        let networkService = NetworkService()
-        let resource = Resource<Movies>.movies(query: name)
+    private func loadData() {
+            Task {
 
-        do {
-            let myData = try await networkService.load(resource)
-            // Use myData object here
-            print(myData)
-            print(myData.items.count)
-        } catch {
-            // Handle error here
+                await viewModel.fetchData()
+                viewModel.observeMyData()
+                self.tableView.reloadData()
+            }
         }
-    }
-//func searchMovies(with name: String) -> AnyPublisher<Result<Movies, Error>, Never> {
-////    let networkService: NetworkServiceTypes
-////    networkService = NetworkService.init()
-////    return networkService.load(Resource<Movies>.movies(query: name)).map{
-////        .success($0)
-////    }.catch{error -> AnyPublisher<Result<Movies, Error>, Never> in .just(.failure(error))}.eraseToAnyPublisher()
-////    return networkService
-////        .load(Resource<Movies>.movies(query: name))
-////        .map { .success($0)
-//////            print(<#T##Any...#>)
-////        }
-////        .catch { error -> AnyPublisher<Result<Movies, Error>, Never> in .just(.failure(error)) }
-////        .subscribe(on: Scheduler.backgroundWorkScheduler)
-////        .receive(on: Scheduler.mainScheduler)
-////        .eraseToAnyPublisher()
-//
-//}
 }
 
 extension MainViewController:UITableViewDelegate {
@@ -64,8 +38,15 @@ extension MainViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        
         cell.titleLabels.text = "sdfsdf"
+        guard let dataitem = viewModel.myData?.items[indexPath.row] else {
+            return cell
+        }
+        cell.titleLabels.text = dataitem.title
+        cell.releaseDateLabel.text = dataitem.releaseDate
+    
+        
+//        cell.titleLabels.text = "sdfsdf"
         return cell
     }
     
@@ -73,7 +54,11 @@ extension MainViewController:UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 5
+        guard let data = viewModel.myData else {
+            return 4
+        }
+                
+        return data.items.count
     }
     
   
