@@ -7,35 +7,32 @@
 
 import Foundation
 import Combine
-//import UIK
-//import Network
-//public protocol AutoMockable {}
-//
-//protocol MovieUseCaseType: AutoMockable {
-//    
-//    
-//    func searchMovies(with name:String) -> AnyPublisher<Result<Movies, Error> , Never> 
-//    
-//    
-//}
-//final class MovieUseCase: MovieUseCaseType {
-//    
-//    private let networkservice = NetworkServiceTypes.self
-//    
-//    init(networkservice: NetworkServiceTypes){
-//        networkservice = networkservice
-//    }
-//    
-//    
-//    func searchMovies(with name:String) -> AnyPublisher<Result<Movies, Error> , Never> {
-//        return networkservice
-//            .load(Resource<Movies>.movies(query: name))
-//            .map{ .success($0) }
-//            .catch { error -> AnyPublisher<Result<Movies, Error>, Never> in
-//                .just(.failure(error))
-//                
-//            }
-//            .eraseToAnyPublisher()
-//    }
-//    
-//}
+import UIKit
+
+protocol MovieUsecaseType {
+    func fetchData  (with name: String)  async throws -> Movies
+    func loadImage(from movie: Movie) async throws -> UIImage
+}
+
+
+final class MovieUseCase : MovieUsecaseType{
+    private let networkService: NetworkServiceTypes
+        private let imageDownloadService: ImagedownloadServiceType
+    init(networkService: NetworkServiceTypes = NetworkService(),
+             imageDownloadService: ImagedownloadServiceType = ImagedownloadService()) {
+            self.networkService = networkService
+            self.imageDownloadService = imageDownloadService
+        }
+    func fetchData (with name: String)  async throws -> Movies {
+        return try await self.networkService.load(Resource<Movies>.movies(query: name))
+    }
+    
+    func loadImage(from movie: Movie) async throws -> UIImage {
+            guard let poster = movie.poster else { return UIImage() }
+            let urls = ImageSize.small.url.appendingPathComponent(poster)
+                let image = try await imageDownloadService.downloadImage(from: urls)
+                return image
+    }
+    
+    
+}

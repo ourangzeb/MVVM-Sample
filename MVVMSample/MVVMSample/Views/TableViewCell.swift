@@ -16,12 +16,12 @@ class TableViewCell: UITableViewCell{
     @IBOutlet weak var titleLabels: UILabel!
     
     private var imageTask: Task<UIImage, Error>?
-    func configureImage(movie: Movie, viewmodel: MoviesViewModel) {
+    func configureImage(movie: Movie, viewmodel: MovieViewModel) {
         imageTask?.cancel()
         
         imageTask = Task {
             do {
-                let image = try await viewmodel.loadImage(from: movie)
+                let image = try await viewmodel.downloadImage(movie: movie)
                 DispatchQueue.main.async {
                     self.movieImageView.image = image
                 }

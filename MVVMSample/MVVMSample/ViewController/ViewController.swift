@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    private let viewModel = MoviesViewModel()
+    private let viewModel = MovieViewModel()
 
     override func viewDidLoad()
     {
@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
     private func loadData(name: String) {
             Task {
 
-                await viewModel.fetchData(with:name)
+                try await viewModel.fetchData(name:name)
                 viewModel.observeMyData()
                 self.tableView.reloadData()
             }
@@ -38,7 +38,7 @@ extension MainViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)  -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        cell.configureImage(movie: (viewModel.myData?.items[indexPath.row])!, viewmodel: viewModel)
+        cell.configureImage(movie: (viewModel.movies?.items[indexPath.row])!, viewmodel: viewModel)
         return cell
     }
     
@@ -46,7 +46,7 @@ extension MainViewController:UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let data = viewModel.myData else {
+        guard let data = viewModel.movies else {
             return 0
         }
                 
