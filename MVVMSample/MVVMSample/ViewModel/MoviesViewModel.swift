@@ -19,6 +19,7 @@ class MovieViewModel : ObservableObject {
         myDataSubject.eraseToAnyPublisher()
     }
     func fetchMovieid() -> Movie? {
+        
         guard let movie = self.movies?.items[self.selectedIndex] else {
             return nil
         }

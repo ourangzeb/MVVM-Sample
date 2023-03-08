@@ -28,7 +28,10 @@ class DetailMovieViewController:UIViewController {    @IBOutlet weak var release
     }
     private func loadData() {
         Task {
-            try await viewModel?.fetchMovieDetail(id:0)
+            guard let movieId = self.viewModel?.movie?.id else {
+                return
+            }
+                    try await viewModel?.fetchMovieDetail(id: movieId)
             viewModel?.observeMyData()
             self.configureImage()
             

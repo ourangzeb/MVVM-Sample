@@ -21,11 +21,11 @@ class MovieDetailViewModel : ObservableObject {
        
         self.movieUsecasetype = movieUsecasetype
     }
-    func fetchMovieDetail(id: Int = 0) async throws {
-        guard let movieId = self.movie?.id else {
-            return
-        }
-        self.movie =  try! await movieUsecasetype.fetchMovieDetails(with: movieId)
+    func fetchMovieDetail(id: Int ) async throws {
+//        guard let movieId = self.movie?.id else {
+//            return
+//        }
+        self.movie =  try! await movieUsecasetype.fetchMovieDetails(with: id)
     }
     
     func downloadImage() async throws -> UIImage {

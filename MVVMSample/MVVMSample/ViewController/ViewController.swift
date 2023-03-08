@@ -38,6 +38,9 @@ extension MainViewController:UITableViewDelegate {
         
         
 //        let movie = viewModel.fetchMovieid(index: indexPath.row)
+        viewModel.selectedIndex = indexPath.row + 1
+        print("selected index \(indexPath.row)")
+        
     }
     
 }
@@ -45,7 +48,10 @@ extension MainViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)  -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        cell.configureImage(movie: (viewModel.movies?.items[indexPath.row])!, viewmodel: viewModel)
+        guard let viewmodels = self.viewModel.movies else {
+            return cell
+        }
+        cell.configureImage(movie: (viewmodels.items[indexPath.row  ]), viewmodel: viewModel)
         return cell
     }
     
