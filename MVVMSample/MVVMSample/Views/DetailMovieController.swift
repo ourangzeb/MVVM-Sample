@@ -9,10 +9,7 @@ import UIKit
 
 
 
-class DetailMovieViewController:UIViewController {
-    //    @IBOutlet UIImageView movieImage
-    //    @IBOutlet UILabel movieTitle
-    //MovieDetailViewModel
+class DetailMovieViewController:UIViewController {    @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var movieImageView: UIImageView!
     
     @IBOutlet weak var movieTitleLabel: UILabel!
@@ -34,9 +31,7 @@ class DetailMovieViewController:UIViewController {
             try await viewModel?.fetchMovieDetail(id:0)
             viewModel?.observeMyData()
             self.configureImage()
-            DispatchQueue.main.async {
-                self.moviedetailLabel.text = "sdfsdfsdf"
-            }
+            
         }
     }
     func configureImage() {
@@ -57,8 +52,10 @@ class DetailMovieViewController:UIViewController {
             }()
         }
         DispatchQueue.main.async {
-            self.moviedetailLabel.text = movieData.title
+            self.movieTitleLabel.text = movieData.title
             self.moviedetailLabel.text = movieData.overview
+            self.moviedetailLabel.numberOfLines = 5
+            self.releaseDateLabel.text = movieData.releaseDate
             self.movieRatingLabel.text = String(movieData.voteAverage)
         }
         

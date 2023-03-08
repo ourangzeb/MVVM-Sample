@@ -126,7 +126,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="ogQ-K3-oLg">
                                 <rect key="frame" x="20" y="491" width="24" height="24"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-2N-np2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-2N-np2">
                                 <rect key="frame" x="20" y="523" width="374" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="wEh-pe-YpP"/>
@@ -171,6 +171,7 @@
                         <outlet property="movieRatingLabel" destination="OzE-FL-PqF" id="WFh-Qf-ayU"/>
                         <outlet property="movieTitleLabel" destination="R57-KV-1gD" id="oAE-re-w7E"/>
                         <outlet property="moviedetailLabel" destination="zwD-2N-np2" id="TZ2-Qk-l44"/>
+                        <outlet property="releaseDateLabel" destination="rtW-ia-kao" id="WJG-xh-w6J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tww-cC-UEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
