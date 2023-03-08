@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     private let viewModel = MovieViewModel()
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -32,6 +32,13 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController:UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let movie = self.viewModel.movies?.items[indexPath.row]
+//        let viewmodels = MovieDetailViewModel()
+        
+        
+//        let movie = viewModel.fetchMovieid(index: indexPath.row)
+    }
     
 }
 extension MainViewController:UITableViewDataSource{
@@ -70,3 +77,15 @@ extension MainViewController: UISearchBarDelegate {
     
     
 }
+
+
+extension MainViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? DetailMovieViewController {
+            let detailmovieModel = MovieDetailViewModel()
+            detailmovieModel.movie = viewModel.fetchMovieid()
+            destinationVC.viewModel = detailmovieModel
+        }
+    }
+}
+

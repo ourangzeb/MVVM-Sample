@@ -63,6 +63,7 @@
                                             <outlet property="movieImageView" destination="byk-sB-2mW" id="sEp-53-NMB"/>
                                             <outlet property="releaseDateLabel" destination="6Mn-xX-9HS" id="uCS-8P-Nnv"/>
                                             <outlet property="titleLabels" destination="K2h-aU-8Tz" id="7OD-C1-Nup"/>
+                                            <segue destination="kph-Eu-hhH" kind="show" id="5y5-lV-vb1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -96,8 +97,89 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
+        <!--Detail Movie View Controller-->
+        <scene sceneID="Evo-zJ-Lpp">
+            <objects>
+                <viewController id="kph-Eu-hhH" customClass="DetailMovieViewController" customModule="MVVMSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aan-rF-LJs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D31-kG-GpX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="404"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="2Pd-qS-A0m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Khan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R57-KV-1gD">
+                                <rect key="frame" x="20" y="434" width="158.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###2019 | 2h 41m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtW-ia-kao">
+                                <rect key="frame" x="20" y="466" width="116.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="ogQ-K3-oLg">
+                                <rect key="frame" x="20" y="491" width="24" height="24"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-2N-np2">
+                                <rect key="frame" x="20" y="523" width="374" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="wEh-pe-YpP"/>
+                                </constraints>
+                                <string key="text">###Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###2019 | 2h 41m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzE-FL-PqF">
+                                <rect key="frame" x="52" y="494.5" width="116.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CcU-JN-5gw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rtW-ia-kao" firstAttribute="leading" secondItem="CcU-JN-5gw" secondAttribute="leading" constant="20" id="02J-c5-ber"/>
+                            <constraint firstItem="OzE-FL-PqF" firstAttribute="centerY" secondItem="ogQ-K3-oLg" secondAttribute="centerY" id="7iC-0b-fIS"/>
+                            <constraint firstItem="ogQ-K3-oLg" firstAttribute="top" secondItem="rtW-ia-kao" secondAttribute="bottom" constant="8" symbolic="YES" id="7ip-g3-ilL"/>
+                            <constraint firstItem="CcU-JN-5gw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rtW-ia-kao" secondAttribute="trailing" symbolic="YES" id="CVd-VQ-LT1"/>
+                            <constraint firstItem="CcU-JN-5gw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R57-KV-1gD" secondAttribute="trailing" symbolic="YES" id="Dms-4F-lBO"/>
+                            <constraint firstItem="R57-KV-1gD" firstAttribute="top" secondItem="D31-kG-GpX" secondAttribute="bottom" constant="30" id="KbF-Qr-4Dg"/>
+                            <constraint firstItem="CcU-JN-5gw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OzE-FL-PqF" secondAttribute="trailing" symbolic="YES" id="LAh-dC-LF3"/>
+                            <constraint firstItem="D31-kG-GpX" firstAttribute="leading" secondItem="aan-rF-LJs" secondAttribute="leading" id="P6S-ql-X2O"/>
+                            <constraint firstItem="CcU-JN-5gw" firstAttribute="trailing" secondItem="zwD-2N-np2" secondAttribute="trailing" constant="20" id="TBm-eB-iRy"/>
+                            <constraint firstItem="OzE-FL-PqF" firstAttribute="leading" secondItem="ogQ-K3-oLg" secondAttribute="trailing" constant="8" symbolic="YES" id="X1Q-hY-diY"/>
+                            <constraint firstItem="D31-kG-GpX" firstAttribute="top" secondItem="aan-rF-LJs" secondAttribute="top" id="idt-QY-vNG"/>
+                            <constraint firstItem="ogQ-K3-oLg" firstAttribute="leading" secondItem="CcU-JN-5gw" secondAttribute="leading" constant="20" id="jzS-q7-SOc"/>
+                            <constraint firstItem="zwD-2N-np2" firstAttribute="leading" secondItem="CcU-JN-5gw" secondAttribute="leading" constant="20" id="lcc-q7-QW5"/>
+                            <constraint firstItem="R57-KV-1gD" firstAttribute="leading" secondItem="CcU-JN-5gw" secondAttribute="leading" constant="20" id="oDS-56-8LR"/>
+                            <constraint firstItem="zwD-2N-np2" firstAttribute="top" secondItem="ogQ-K3-oLg" secondAttribute="bottom" constant="8" symbolic="YES" id="oGW-AB-AF7"/>
+                            <constraint firstAttribute="trailing" secondItem="D31-kG-GpX" secondAttribute="trailing" id="tye-kC-JY5"/>
+                            <constraint firstItem="rtW-ia-kao" firstAttribute="top" secondItem="R57-KV-1gD" secondAttribute="bottom" constant="8" symbolic="YES" id="vTW-Og-2TO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wCl-sR-Haa"/>
+                    <connections>
+                        <outlet property="movieImageView" destination="D31-kG-GpX" id="Y6V-Vr-OIi"/>
+                        <outlet property="movieRatingLabel" destination="OzE-FL-PqF" id="WFh-Qf-ayU"/>
+                        <outlet property="movieTitleLabel" destination="R57-KV-1gD" id="oAE-re-w7E"/>
+                        <outlet property="moviedetailLabel" destination="zwD-2N-np2" id="TZ2-Qk-l44"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tww-cC-UEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="160.71428571428569"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="star" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

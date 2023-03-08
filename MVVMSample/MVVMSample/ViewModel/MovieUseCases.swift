@@ -12,10 +12,13 @@ import UIKit
 protocol MovieUsecaseType {
     func fetchData  (with name: String)  async throws -> Movies
     func loadImage(from movie: Movie) async throws -> UIImage
+    func fetchMovieDetails  (with name: Int)  async throws -> Movie
 }
 
 
 final class MovieUseCase : MovieUsecaseType{
+  
+    
     private let networkService: NetworkServiceTypes
         private let imageDownloadService: ImagedownloadServiceType
     init(networkService: NetworkServiceTypes = NetworkService(),
@@ -29,10 +32,16 @@ final class MovieUseCase : MovieUsecaseType{
     
     func loadImage(from movie: Movie) async throws -> UIImage {
             guard let poster = movie.poster else { return UIImage() }
-            let urls = ImageSize.small.url.appendingPathComponent(poster)
+        let urls = ImageSize.original.url.appendingPathComponent(poster)
                 let image = try await imageDownloadService.downloadImage(from: urls)
                 return image
     }
     
     
+    
+    
+    
+    func fetchMovieDetails(with Id: Int) async throws -> Movie {
+        return try await self.networkService.load(Resource<Movie>.details(movieId: Id))
+    }
 }
