@@ -69,7 +69,9 @@ class DetailMovieViewController:UIViewController {    @IBOutlet weak var release
     }
     
     
-    
+    deinit {
+        imageTask?.cancel()
+    }
     
     
 }
