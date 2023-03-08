@@ -17,7 +17,7 @@ class TableViewCell: UITableViewCell{
     
     private var imageTask: Task<UIImage, Error>?
     func configureImage(movie: Movie, viewmodel: MovieViewModel) {
-        imageTask?.cancel()
+
         
         imageTask = Task {
             do {
