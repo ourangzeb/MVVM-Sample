@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    private let viewModel = MovieViewModel()
+     let viewModel = MovieViewModel()
     
     override func viewDidLoad()
     {
@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
         searchbar.delegate = self
                 
     }
-    private func loadData(name: String) {
+     func loadData(name: String) {
             Task {
 
                 try await viewModel.fetchData(name:name)
