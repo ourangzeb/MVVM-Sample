@@ -17,7 +17,7 @@ class TableViewCell: UITableViewCell{
     
     private var imageTask: Task<UIImage, Error>?
     func configureImage(movie: Movie, viewmodel: MovieViewModel) {
-
+//        self.movieImageView.image = UIImage(named: "star")
         imageTask = Task {
             do {
                 let image = try await viewmodel.downloadImage(movie: movie)

@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
 
                 try await viewModel.fetchData(name:name)
                 viewModel.observeMyData()
-                self.tableView.reloadData()
+             self.tableView.reloadData()
             }
         }
 }
@@ -78,9 +78,6 @@ extension MainViewController: UISearchBarDelegate {
             self.loadData(name: searchText)
         }
     }
-    
-    
-    
     
 }
 

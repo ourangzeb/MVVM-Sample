@@ -10,14 +10,18 @@ import Combine
 import UIKit
 
 class MovieViewModel : ObservableObject {
-     var movies: Movies?
+     var movies: MoviesList?
     private let movieUsecasetype: MovieUsecaseType
     var selectedIndex : Int = 0
     private var cancellables = Set<AnyCancellable>()
-    private let myDataSubject = PassthroughSubject<Movies?, Never>()
-    var myDataPublisher: AnyPublisher<Movies?, Never> {
+    private let myDataSubject = PassthroughSubject<MoviesList?, Never>()
+    
+    var myDataPublisher: AnyPublisher<MoviesList?, Never> {
         myDataSubject.eraseToAnyPublisher()
     }
+    
+    
+    
     func fetchMovieid() -> Movie? {
         
         guard let movie = self.movies?.items[self.selectedIndex] else {
@@ -25,10 +29,15 @@ class MovieViewModel : ObservableObject {
         }
         return movie
     }
+    
+    
+    
     init(movieUsecasetype: MovieUsecaseType =  MovieUseCase()) {
        
         self.movieUsecasetype = movieUsecasetype
     }
+    
+    
     
     func fetchData(name : String) async throws {
         self.movies =  try! await movieUsecasetype.fetchData(with: name)
@@ -46,6 +55,8 @@ class MovieViewModel : ObservableObject {
             }
             .store(in: &cancellables)
     }
+    
+    
     deinit {
         cancellables.forEach { $0.cancel() }
     }

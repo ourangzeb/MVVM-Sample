@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movies {
+struct MoviesList {
     let items: [Movie]
 }
 struct Genre: Decodable {
@@ -63,7 +63,7 @@ enum GenreId: Int, CustomStringConvertible, Decodable, Hashable {
 }
 
 
-extension Movies: Decodable {
+extension MoviesList: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case items = "results"

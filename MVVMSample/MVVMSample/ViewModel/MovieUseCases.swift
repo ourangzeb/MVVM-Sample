@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol MovieUsecaseType {
-    func fetchData  (with name: String)  async throws -> Movies
+    func fetchData  (with name: String)  async throws -> MoviesList
     func loadImage(from movie: Movie) async throws -> UIImage
     func fetchMovieDetails  (with name: Int)  async throws -> Movie
 }
@@ -25,8 +25,8 @@ final class MovieUseCase : MovieUsecaseType{
             self.networkService = networkService
             self.imageDownloadService = imageDownloadService
         }
-    func fetchData (with name: String)  async throws -> Movies {
-        return try await self.networkService.load(Resource<Movies>.movies(query: name))
+    func fetchData (with name: String)  async throws -> MoviesList {
+        return try await self.networkService.load(Resource<MoviesList>.movies(query: name))
     }
     
     func loadImage(from movie: Movie) async throws -> UIImage {
