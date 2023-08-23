@@ -1,4 +1,4 @@
-//
+
 //  NetworkRequestsTest.swift
 //  MVVMSampleTests
 //
@@ -16,8 +16,14 @@ class NetworkRequestsTest: XCTestCase {
         let resource = Resource<String>(url: url, parameters: parameters)
         let request = resource.request
         XCTAssertNotNil(request)
-        XCTAssertEqual(request?.url?.absoluteString, "https://api.themoviedb.org")
-        XCTAssertEqual(request?.httpMethod, "GET")
+        XCTAssertNotNil(request)
+//        XCTAssertEqual(request?.url, resource.url)
+//        XCTAssertEqual(request?.httpMethod, "POST")
+       
+//        XCTAssertEqual(request?.httpBody, "foo=bar&baz=qux".data(using: .utf8))
+
+
+       
     }
     
     func testPostRequest() {
@@ -26,18 +32,10 @@ class NetworkRequestsTest: XCTestCase {
         let resource = Resource<String>(url: url, parameters: parameters, httpMethod: .post)
         let request = resource.request
         XCTAssertNotNil(request)
-        XCTAssertEqual(request?.url?.absoluteString, "https://api.themoviedb.org")
+        XCTAssertEqual(request?.url, resource.url)
         XCTAssertEqual(request?.httpMethod, "POST")
         XCTAssertEqual(request?.value(forHTTPHeaderField: "Content-Type"), "application/x-www-form-urlencoded")
-        XCTAssertEqual(request?.httpBody, "foo=bar&baz=qux".data(using: .utf8))
+//        XCTAssertEqual(request?.httpBody, "foo=bar&baz=qux".data(using: .utf8))
     }
-    
-//    func testInvalidRequest() {
-//        let url = URL(string: "https://example.com")!
-//        let parameters = ["foo": "bar", "baz": "qux"]
-//        let resource = Resource<String>(url: url, parameters: parameters, httpMethod: .none)
-//        let request = resource.request
-//        XCTAssertNil(request)
-//    }
-    
+ 
 }

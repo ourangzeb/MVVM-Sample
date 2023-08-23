@@ -1,0 +1,383 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/2I90eTdWu1yQPXtvuMxGW4kgswP.jpg",
+      "genre_ids": [
+        16,
+        10749,
+        878
+      ],
+      "id": 604605,
+      "original_language": "ja",
+      "original_title": "HELLO WORLD",
+      "overview": "A shy high schooler in Kyoto meets a man claiming to be his future self, who tells him he’s hacked into the past to save their first love.",
+      "popularity": 22.786,
+      "poster_path": "/vmizP4G4EWsxNf6PLOvGNaFJ89Y.jpg",
+      "release_date": "2019-09-20",
+      "title": "Hello World",
+      "video": false,
+      "vote_average": 7.318,
+      "vote_count": 316
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7vbiGGQ5Y9IrD4hE0LIHb5xfoWy.jpg",
+      "genre_ids": [
+        35,
+        10751,
+        18
+      ],
+      "id": 993092,
+      "original_language": "zh",
+      "original_title": "我的麻吉4個鬼",
+      "overview": "This film is adapted from the 2010 South Korean blockbuster and tear-jerking comedy Hello Ghost. A lonely delivery man, A-wei, tries to commit suicide multiple times but fails no matter what he does. Through these failed attempts, he meets four ghosts — a smoker, a crier, a heartbroken ghost, and a mischievous ghost. In order for him to die, he learns that he has to first help these four ghosts fulfill their final wishes. In the process of doing so, A-wei befriends these four ghosts and overcomes his low self-esteem to step out of his comfort zone and experience many firsts in life.",
+      "popularity": 13.337,
+      "poster_path": "/otES9Li7uwcD72f3xbnoqD9pSbp.jpg",
+      "release_date": "2023-08-18",
+      "title": "Hello Ghost!",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cpztJIofqrFQVbgFfSgXzXdytTL.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 62439,
+      "original_language": "ko",
+      "original_title": "헬로우 고스트",
+      "overview": "A man's failed suicide attempt enables him to see ghosts, who later keep following him everywhere. It is now up to him to fulfill their wishes to make them go away.",
+      "popularity": 10.739,
+      "poster_path": "/mjjZ0p8wIKaRZHbDFjceWN5Tjtk.jpg",
+      "release_date": "2010-12-23",
+      "title": "Hello Ghost",
+      "video": false,
+      "vote_average": 7.637,
+      "vote_count": 84
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749
+      ],
+      "id": 1093176,
+      "original_language": "km",
+      "original_title": "ឱកាសស្នេហ៍គេដូចមុន",
+      "overview": "Plot Unknown",
+      "popularity": 0.875,
+      "poster_path": "/jRA4hdabGh5CusHj5TY9S9jvZzS.jpg",
+      "release_date": "2023-04-13",
+      "title": "Give My Last Hello",
+      "video": false,
+      "vote_average": 3.875,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h9KHl6ttPBkyFDlq7yxZZygT2n7.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 178172,
+      "original_language": "ja",
+      "original_title": "フィギュアなあなた",
+      "overview": "A lonely otaku is fired from his job. He is rescued in a ruined building by a strange girl in a sailor suit. When he wakes up, the girl becomes a figure. The young man and the pretty figure begin to live together.",
+      "popularity": 12.79,
+      "poster_path": "/3pbHCClnd9l6Xi5PSoG2Uk59Td3.jpg",
+      "release_date": "2013-06-15",
+      "title": "Hello, My Dolly Girlfriend",
+      "video": false,
+      "vote_average": 5.172,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/L7hqV1bbk8UFjgnu17BQ3Jkokr.jpg",
+      "genre_ids": [
+        28,
+        10751,
+        10402,
+        10749
+      ],
+      "id": 494061,
+      "original_language": "te",
+      "original_title": "హలో!",
+      "overview": "Avinash/Seenu is a street urchin brought up by his loving adoptive parents Saru and Prakash. The love of his life is the girl he meets during childhood Junnu/Priya, whom fate had snatched away from him. Fourteen long years and they still wait for the day they will meet again. Will destiny help them?",
+      "popularity": 5.012,
+      "poster_path": "/bAb8vzm76WbX8ptWKLBbIDd0YWc.jpg",
+      "release_date": "2017-12-22",
+      "title": "Hello!",
+      "video": false,
+      "vote_average": 6.875,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1135700,
+      "original_language": "hi",
+      "original_title": "Hello Hello Whats-Up",
+      "overview": "After the patriarch of the Sharma family passes away, many extended family members gather. Amidst the mourning, Suman begins to receive messages from his late father. What is the mystery behind this paranormal phenomenon?",
+      "popularity": 1.407,
+      "poster_path": "/1qWefZmDmQy70D1K6Sw4O0Mv2Ie.jpg",
+      "release_date": "2023-06-02",
+      "title": "Hello Hello Whats-Up",
+      "video": false,
+      "vote_average": 4,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35,
+        27,
+        14,
+        12
+      ],
+      "id": 105755,
+      "original_language": "zh",
+      "original_title": "Hello Dracula",
+      "overview": "A troupe of young orphan street-performers tangle with the undead when a rouge jiangshi kills their beloved guardian.",
+      "popularity": 2.438,
+      "poster_path": "/zxrsc8gwo31iItakzhfKOWH855C.jpg",
+      "release_date": "1986-06-20",
+      "title": "Hello Dracula",
+      "video": false,
+      "vote_average": 6.583,
+      "vote_count": 6
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 507531,
+      "original_language": "en",
+      "original_title": "Hello & Goodbye",
+      "overview": "With wounds still open from the recent end of their long-term relationship, Drew and Beth meet up for dinner to explore their newfound station as “just friends” only to discover they never really knew each other at all.",
+      "popularity": 1.592,
+      "poster_path": "/5D6U1PvdJ3JeJ6SlmvbtMjvdW9l.jpg",
+      "release_date": "2018-03-09",
+      "title": "Hello & Goodbye",
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/e0WTSvngep4JmbyjVVC91V2MCHW.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 538331,
+      "original_language": "zh",
+      "original_title": "西虹市首富",
+      "overview": "A pathetic minor league Soccer Goalkeeper was given a task - to spend 1 Billion in thirty days, if successful he will get 30 Billion. However, he's not allowed to tell anyone about the task and he must not own any valuables by end of it.",
+      "popularity": 6.938,
+      "poster_path": "/AlvbSlFnAAnE7k3r2INbG5Ydb3K.jpg",
+      "release_date": "2018-07-27",
+      "title": "Hello Mr. Billionaire",
+      "video": false,
+      "vote_average": 6.781,
+      "vote_count": 80
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lRomJzSe6bS2JPZKc6awNcouoLV.jpg",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "id": 734622,
+      "original_language": "de",
+      "original_title": "Hello Again - Ein Tag für immer",
+      "overview": "Zazie lives with her buddies, womanizer Patrick and sweetheart Anton, in a flat share. All three are completely incapable of being in a relationship. Finding the great love? No need. Zazie is sure of that. When Philipp, Zazie's best friend from childhood, sends an invitation to his wedding, Zazie is shocked to find out that he wants to marry stuck up and vicious Franziska. She is definitely the wrong girl for Philipp! Zazie decides to do everything she can to save him from making the biggest mistake of his life. But will this turn out to be her own path to happiness?",
+      "popularity": 7.081,
+      "poster_path": "/4WEyVfO7r17GDcHJ9VUTnXYamcC.jpg",
+      "release_date": "2020-09-17",
+      "title": "Hello Again - A Wedding A Day",
+      "video": false,
+      "vote_average": 5.808,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3KmpNFjYDB6tS6G5U3JCpsJETFy.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 40580,
+      "original_language": "ko",
+      "original_title": "순정만화",
+      "overview": "Kwon Yeon-woo is a thirty year old low-level civil servant who works in a district office; quite innocent for his age, he has been on numerous blind dates in an unsuccessful bid to find a wife. After moving into a new place, he begins to encounter a high school girl, Soo-yeong, on his way to work every morning, and she begins to develop feelings for him. Meanwhile, Kang Sook has just started working at the district office straight out of high school, and falls head over heels for older woman Kwon Ha-kyeong.",
+      "popularity": 6.081,
+      "poster_path": "/tmuG77YQEoXDQu3ypJadgc8FDmJ.jpg",
+      "release_date": "2008-11-27",
+      "title": "Hello, Schoolgirl",
+      "video": false,
+      "vote_average": 6.844,
+      "vote_count": 45
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rvsPkUYhWZkAKMb2fnWHw5pNAjZ.jpg",
+      "genre_ids": [
+        35,
+        10749,
+        10402
+      ],
+      "id": 14030,
+      "original_language": "en",
+      "original_title": "Hello, Dolly!",
+      "overview": "Dolly Levi is a strong-willed matchmaker who travels to Yonkers, New York in order to see the miserly \"well-known unmarried half-a-millionaire\" Horace Vandergelder. In doing so, she convinces his niece, his niece's intended, and Horace's two clerks to travel to New York City.",
+      "popularity": 9.474,
+      "poster_path": "/aPZOt9BR3gnk1RyX924ySq81S4P.jpg",
+      "release_date": "1969-12-12",
+      "title": "Hello, Dolly!",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 319
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xJbxLljtGef6Y09fh0bgyuMcbYw.jpg",
+      "genre_ids": [
+        99,
+        10402
+      ],
+      "id": 298852,
+      "original_language": "en",
+      "original_title": "Hello Quo",
+      "overview": "Collecting hours of previously unseen footage and classic live material with full exclusive access to all band members this is the definitive story of a band that has done and seen it all. As well as full access to the band, Hello Quo! Also features input from a host of the biggest names in rock including: Brian May of Queen, Joe Elliott of Def Leppard, Thin Lizzy, Buzzcocks, Slade, Paul Weller, Sir Cliff Richard and Midge Ure. The documentary also exclusively features the moment when the original line up of the band met again for the first time in over 30 years. A truly poignant reunion, after years of legal wrangling, saw the band clear the air but also plug in and play together once again... This Access All Areas Collector s Edition includes 3 hours of astonishing never seen before Quo footage!",
+      "popularity": 1.307,
+      "poster_path": "/kEZ9qN9nNxjENE5C9jfg67WZHbL.jpg",
+      "release_date": "2012-10-22",
+      "title": "Hello Quo",
+      "video": false,
+      "vote_average": 5.529,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aBAbW00D5HqyIAMPkJUEwScDaSQ.jpg",
+      "genre_ids": [],
+      "id": 705584,
+      "original_language": "ja",
+      "original_title": "Hello! Project 2017 Summer ~HELLO! GATHERING~",
+      "overview": "Hello! Project concert held at Nakano Sunplaza Hall.",
+      "popularity": 0.6,
+      "poster_path": "/fepBnwY3QnSC1Z57V85KDc13EF4.jpg",
+      "release_date": "2017-09-02",
+      "title": "Hello! Project 2017 Summer ~HELLO! GATHERING~",
+      "video": true,
+      "vote_average": 3.667,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/it3eXHgCl0PMUOJk0pfwT9asTxq.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 1042840,
+      "original_language": "te",
+      "original_title": "హలో.. మీరా..!",
+      "overview": "Meera, an IT employee in Hyderabad, returns to her hometown Vijayawada for her marriage. An Instagram tag by her ex-boyfriend, Sudheer and a call from the police turn her world upside down and push her into a physical and emotional rollercoaster.",
+      "popularity": 1.316,
+      "poster_path": "/2xUheapnQ5E5awCuQfxnbO8kGYW.jpg",
+      "release_date": "2023-04-21",
+      "title": "Hello.. Meera..!",
+      "video": false,
+      "vote_average": 5.75,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35,
+        27,
+        14,
+        12
+      ],
+      "id": 105754,
+      "original_language": "zh",
+      "original_title": "Hello! Dracular",
+      "overview": "A priest, a nun and a showman sneaks into the morgue and sees a dancing vampire and catches it. It all lead to an assault and abduction of Tien Tien.",
+      "popularity": 3.461,
+      "poster_path": "/lMUeVnCru8jjOXDAF8i6WV6fsxQ.jpg",
+      "release_date": "1987-01-01",
+      "title": "Hello Dracula 2: Son of the Vampire",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mfxbEvaz68QllWCUkYobPx1Cv6S.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 593961,
+      "original_language": "tl",
+      "original_title": "Hello, Love, Goodbye",
+      "overview": "A bartender and a domestic helper of Filipino origin living in Hong Kong find themselves falling in love, but they each have different plans for their future.",
+      "popularity": 9.548,
+      "poster_path": "/sJFouUfCgHFSUh5OKVSQBSfrfA1.jpg",
+      "release_date": "2019-07-31",
+      "title": "Hello, Love, Goodbye",
+      "video": false,
+      "vote_average": 6.327,
+      "vote_count": 104
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/95Xcy6uv0nj3QAQ145iMmbG4v9S.jpg",
+      "genre_ids": [],
+      "id": 731476,
+      "original_language": "ja",
+      "original_title": "Hello! Project DVD Magazine Vol.43",
+      "overview": "Members one-shot talk interviews of 2014.",
+      "popularity": 0.6,
+      "poster_path": "/sorQhfzy182E4rEQL3S5ps8D8Wy.jpg",
+      "release_date": "2014-07-15",
+      "title": "Hello! Project DVD Magazine Vol.43",
+      "video": true,
+      "vote_average": 5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w5BcZDbklIVAtE2DOXKCMXNRDKo.jpg",
+      "genre_ids": [],
+      "id": 703440,
+      "original_language": "ja",
+      "original_title": "Hello! Project 2013 Summer COOL HELLO！～ソレゾーレ！～",
+      "overview": "Hello! Project concert held at Nakano Sunplaza Hall.",
+      "popularity": 0.6,
+      "poster_path": "/xdnht8BYxm4GFnmvwE0jGdt0LzP.jpg",
+      "release_date": "2013-07-27",
+      "title": "Hello! Project 2013 Summer COOL HELLO! ~Sorezoore!~",
+      "video": true,
+      "vote_average": 7.7,
+      "vote_count": 5
+    }
+  ],
+  "total_pages": 42,
+  "total_results": 826
+}

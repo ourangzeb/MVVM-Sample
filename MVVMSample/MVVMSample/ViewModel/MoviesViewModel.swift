@@ -13,11 +13,11 @@ class MovieViewModel : ObservableObject {
      var movies: MoviesList?
     private let movieUsecasetype: MovieUsecaseType
     var selectedIndex : Int = 0
-    private var cancellables = Set<AnyCancellable>()
-    private let myDataSubject = PassthroughSubject<MoviesList?, Never>()
+     var cancellables = Set<AnyCancellable>()
+    private let dataSubject = PassthroughSubject<MoviesList?, Never>()
     
-    var myDataPublisher: AnyPublisher<MoviesList?, Never> {
-        myDataSubject.eraseToAnyPublisher()
+    var dataPublisher: AnyPublisher<MoviesList?, Never> {
+        dataSubject.eraseToAnyPublisher()
     }
     
     
@@ -49,7 +49,7 @@ class MovieViewModel : ObservableObject {
     
     
     func observeMyData() {
-        myDataPublisher
+        dataPublisher
             .sink { [unowned self] movies in
                 self.movies = movies
             }
