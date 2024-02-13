@@ -24,13 +24,6 @@ class MovieViewModel : ObservableObject {
     
     
     
-    
-    
-    
-    
-    
-    
-    
     func fetchMovieid() -> Movie? {
         
         guard let movie = self.movies?.items[self.selectedIndex] else {
@@ -45,22 +38,6 @@ class MovieViewModel : ObservableObject {
        
         self.movieUsecasetype = movieUsecasetype
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
