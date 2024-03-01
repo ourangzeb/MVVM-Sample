@@ -184,9 +184,9 @@
             filePath = "MVVMSample/ViewModel/MoviesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "init(movieUsecasetype:)"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchData(name:)"
             landmarkType = "7">
             <Locations>
                <Location
