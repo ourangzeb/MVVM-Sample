@@ -60,6 +60,8 @@ class MovieViewModel : ObservableObject {
     
     
     
+    
+    
     func fetchData(name : String) async throws {
         self.movies =  try! await movieUsecasetype.fetchData(with: name)
     }
