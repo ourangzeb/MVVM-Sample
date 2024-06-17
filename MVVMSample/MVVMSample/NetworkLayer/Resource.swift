@@ -11,7 +11,8 @@ enum HttpMethod: String {
     case get = "GET"
     case post = "POST"
 }
-struct Resource<T:Decodable> {
+
+struct  Resource<T:Decodable> {
     
     let url: URL
     let parameters: [String: CustomStringConvertible]

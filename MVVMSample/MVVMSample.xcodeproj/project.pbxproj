@@ -19,7 +19,7 @@
 		CB37C8A029B0A86D003F1281 /* MVVMSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C89F29B0A86D003F1281 /* MVVMSampleUITests.swift */; };
 		CB37C8A229B0A86D003F1281 /* MVVMSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37C8A129B0A86D003F1281 /* MVVMSampleUITestsLaunchTests.swift */; };
 		CB3FB4BF29B21CB40014A108 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FB4BE29B21CB40014A108 /* ApiConstants.swift */; };
-		CB3FB4C129B21E170014A108 /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FB4C029B21E170014A108 /* NetworkRequests.swift */; };
+		CB3FB4C129B21E170014A108 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FB4C029B21E170014A108 /* Resource.swift */; };
 		CB3FB4C329B21F900014A108 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FB4C229B21F900014A108 /* NetworkError.swift */; };
 		CB41758B29B871E50060B8A1 /* DetailMovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41758A29B871E50060B8A1 /* DetailMovieController.swift */; };
 		CB41758E29B875D20060B8A1 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41758D29B875D20060B8A1 /* MovieDetailViewModel.swift */; };
@@ -75,7 +75,7 @@
 		CB37C89F29B0A86D003F1281 /* MVVMSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleUITests.swift; sourceTree = "<group>"; };
 		CB37C8A129B0A86D003F1281 /* MVVMSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB3FB4BE29B21CB40014A108 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
-		CB3FB4C029B21E170014A108 /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		CB3FB4C029B21E170014A108 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		CB3FB4C229B21F900014A108 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		CB41758A29B871E50060B8A1 /* DetailMovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieController.swift; sourceTree = "<group>"; };
 		CB41758D29B875D20060B8A1 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
@@ -231,7 +231,8 @@
 		CB3FB4BD29B21CA20014A108 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				CB3FB4C029B21E170014A108 /* NetworkRequests.swift */,
+				CBEB2B3B2C1B95E500E64316 /*  Endpoint */,
+				CB3FB4C029B21E170014A108 /* Resource.swift */,
 				CB3FB4C229B21F900014A108 /* NetworkError.swift */,
 				CBBAAAA929B2364000D2BB43 /* RequestManager.swift */,
 				CBBAAAAB29B2383800D2BB43 /* ServiceManager.swift */,
@@ -282,6 +283,13 @@
 			name = Common;
 			path = "/Users/ourangzaibkhan/MVVM-Sample/MVVMSample/MVVMSample/Common";
 			sourceTree = "<absolute>";
+		};
+		CBEB2B3B2C1B95E500E64316 /*  Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " Endpoint";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -421,7 +429,7 @@
 				CBBAAAA629B235B900D2BB43 /* Resource+Requests.swift in Sources */,
 				CB3FB4C329B21F900014A108 /* NetworkError.swift in Sources */,
 				CBA6536529B0B3AC00F2B720 /* TableViewCell.swift in Sources */,
-				CB3FB4C129B21E170014A108 /* NetworkRequests.swift in Sources */,
+				CB3FB4C129B21E170014A108 /* Resource.swift in Sources */,
 				CB8FD38029B4AEE800FC6A26 /* Publisher+Util.swift in Sources */,
 				CB41758E29B875D20060B8A1 /* MovieDetailViewModel.swift in Sources */,
 				CB0719D629B6309200D59372 /* ImageDownloadService.swift in Sources */,
